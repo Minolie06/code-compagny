@@ -3,5 +3,55 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  height: 100px;
+  background-color: #093348;
+}
+
+/* HOMEPAGE */
+
+.content.homepage {
+  height: 510px;
+  background-image: url("../images/jumbotron.jpg");
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.content.homepage .subtitle {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+/* TEAM */
+
+.content.team {
+  height: 467px;
+  background-color: white;
+}
+
+/* PORTFOLIO */
+
+.content.portfolio {
+  height: 556px;
+  background-color: rgb(62, 173, 135);
+}
+
+/* CONTACT */
+
+.content.contact {
+  height: 799px;
+  background-color: rgb(34, 49, 57);
 }
