@@ -3,10 +3,48 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   text-align: center;
 }
 
+h1 {
+  font-size: 60px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h1 ~ .subtitle {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h2 ~ .subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.separator-small {
+  width: 483px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.separator-small ~ .description {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+}
 
 /* NAVIGATION */
 
@@ -23,23 +61,34 @@ nav {
   color: #ffffff;
 }
 
-h1 {
-  font-size: 60px;
-  letter-spacing: -1px;
-  font-weight: 700;
+.content.homepage .separator-small {
+  background-color: #5a8da7;
+}
+.content.homepage .description {
+  color: #b4d1e1;
 }
 
-.content.homepage .subtitle {
-  font-size: 24px;
-  letter-spacing: -1px;
-  font-weight: 300;
-}
 
 /* TEAM */
 
 .content.team {
   height: 467px;
   background-color: white;
+  color: #0d415c;
+}
+
+.content.team  .team-wrapper {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+.content.team .separator-small {
+  background-color: #c9d4da;
 }
 
 /* PORTFOLIO */
@@ -47,11 +96,13 @@ h1 {
 .content.portfolio {
   height: 556px;
   background-color: rgb(62, 173, 135);
+  color: white;
 }
 
 /* CONTACT */
 
 .content.contact {
+  color: white;
   height: 799px;
   background-color: rgb(34, 49, 57);
 }
