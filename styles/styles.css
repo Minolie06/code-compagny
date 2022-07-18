@@ -63,7 +63,6 @@ h2 ~ .subtitle {
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
 }
 
 .wrapper-inner {
@@ -252,7 +251,6 @@ nav .menu li a:hover {
 
 .content.contact {
   color: white;
-  height: 799px;
   background-color: rgb(34, 49, 57);
 }
 
@@ -306,6 +304,42 @@ nav .menu li a:hover {
 
 .content.contact .separator-large {
   margin-top: 85px;
+  margin-bottom: 55px;
   background-color: rgba(240,240,240,0.4);
 }
 
+.content.contact .follow-copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content.contact .follow-copyright-wrapper .follow {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.content.contact .follow-copyright-wrapper .follow .follow-wrapper {
+  margin-left: 35px;
+}
+
+.content.contact .follow-copyright-wrapper .follow .follow-wrapper .follow-item {
+  height: 36px;
+  width: 36px;
+  margin-right: 8px;
+}
+
+.content.contact .follow-copyright-wrapper .follow .follow-wrapper .follow-item svg {
+  height: auto;
+  width: 36px;
+  fill: #5b7381;
+}
+
+.content.contact .follow-copyright-wrapper .follow .follow-wrapper .follow-item:hover svg {
+  fill: #fff;
+}
+
+.content.contact .follow-copyright-wrapper .copyright {
+  font-size: 12px;
+}
