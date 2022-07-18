@@ -83,11 +83,19 @@ a.link-button {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1140px) {
+  .wrapper-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 /* NAVIGATION */
 
 nav {
-  height: 100px;
+  /* height: 100px; */
   background-color: #093348;
+  padding: 23px 0;
 }
 
 nav .wrapper-inner {
@@ -122,19 +130,38 @@ nav .menu {
   display: flex;
 }
 
-nav .menu li a {
+nav .menu li {
   margin: 0 7px;
-  padding: 10px 20px;
-  border-radius: 3px;
-  text-decoration: none;
-  color: #fff;
   font-size: 17px;
   text-transform: uppercase;
+}
+
+nav .menu li a {
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  height: 100%;
+  width: 100%;
 }
 
 nav .menu li a:hover {
   background-color: rgba(31,68,88);
   color: rgb(142,189, 214);
+}
+
+
+@media screen and (max-width : 768px) {
+
+  nav .wrapper-inner {
+    flex-direction: column;
+  }
+  nav .menu {
+    flex-direction: column;
+    width: 100%;
+
+  }
 }
 
 /* HOMEPAGE */
@@ -166,7 +193,7 @@ nav .menu li a:hover {
   padding: 75px 0;
 }
 
-.content.team  .team-wrapper {
+.content.team .team-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -197,6 +224,16 @@ nav .menu li a:hover {
   font-size: 15px;
   color: #0d415c;
   font-weight: 400;
+}
+
+@media screen and (max-width : 768px) {
+  
+  .content.team  .team-wrapper {
+    flex-direction: column;
+  }
+  .content.team .team-wrapper .team-item {
+    margin-bottom: 40px;
+  }
 }
 
 /* PORTFOLIO */
@@ -245,6 +282,22 @@ nav .menu li a:hover {
 
 .content.portfolio .portfolio-wrapper .portfolio-item:hover .portfolio-hover {
   opacity: 1;
+}
+
+@media screen and (max-width : 768px) {
+  
+  .content.portfolio .portfolio-wrapper  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .separator-vertical {
+    display: none;
+  }
+
+  .content.portfolio .portfolio-wrapper .portfolio-item {
+    margin-bottom: 40px;
+  }
 }
 
 /* CONTACT */
@@ -342,4 +395,15 @@ nav .menu li a:hover {
 
 .content.contact .follow-copyright-wrapper .copyright {
   font-size: 12px;
+}
+
+@media screen and (max-width : 768px) {
+  
+  .content.contact .follow-copyright-wrapper {
+    flex-direction: column;
+  }
+
+  .content.contact .follow-copyright-wrapper .follow {
+    margin-bottom: 40px;
+  }
 }
