@@ -15,12 +15,14 @@ h1 {
   font-size: 60px;
   letter-spacing: -1px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 h1 ~ .subtitle {
   font-size: 24px;
   letter-spacing: -1px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -38,7 +40,7 @@ h2 ~ .subtitle {
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .separator-small ~ .description {
@@ -111,9 +113,9 @@ nav .menu li a:hover {
 /* HOMEPAGE */
 
 .content.homepage {
-  height: 510px;
   background-image: url("../images/jumbotron.jpg");
   color: #ffffff;
+  padding: 110px 0;
 }
 
 .content.homepage .separator-small {
@@ -123,11 +125,24 @@ nav .menu li a:hover {
   color: #b4d1e1;
 }
 
+.content.homepage a {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 12px 45px;
+  background-color: rgba(0,0,0,0.14901960784313725);
+  text-decoration: none;;
+}
+
 
 /* TEAM */
 
 .content.team {
-  height: 467px;
+  height: 616px;
   background-color: white;
   color: #0d415c;
 }
