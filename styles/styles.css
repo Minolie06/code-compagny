@@ -28,11 +28,13 @@ h1 ~ .subtitle {
 h2 {
   font-size: 36px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 h2 ~ .subtitle {
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 15px;
 }
 
 .separator-small {
@@ -52,11 +54,26 @@ h2 ~ .subtitle {
   font-weight: 300;
 }
 
+.separator-vertical {
+  width: 1px;
+}
+
 .wrapper-inner {
   margin: 0 auto;
   width: 100%;
   max-width: 1140px;
   height: 100%;
+}
+
+a.link-button {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 15px 45px;
+  text-decoration: none;
 }
 
 /* NAVIGATION */
@@ -118,7 +135,7 @@ nav .menu li a:hover {
 .content.homepage {
   background-image: url("../images/jumbotron.jpg");
   color: #ffffff;
-  padding: 110px 0;
+  padding: 105px 0;
 }
 
 .content.homepage .separator-small {
@@ -128,17 +145,9 @@ nav .menu li a:hover {
   color: #b4d1e1;
 }
 
-.content.homepage a {
-  display: inline-block;
+.content.homepage a.link-button {
   margin-top: 40px;
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  padding: 12px 45px;
   background-color: rgba(0,0,0,0.14901960784313725);
-  text-decoration: none;;
 }
 
 
@@ -186,9 +195,49 @@ nav .menu li a:hover {
 /* PORTFOLIO */
 
 .content.portfolio {
-  height: 556px;
   background-color: rgb(62, 173, 135);
   color: white;
+}
+
+.content.portfolio .portfolio-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 75px 0 60px 0;
+}
+
+.content.portfolio .portfolio-wrapper .separator-vertical {
+  background-color: #4ebe98;
+}
+
+.content.portfolio .portfolio-wrapper .portfolio-item {
+  position: relative;
+}
+
+.content.portfolio .portfolio-wrapper .portfolio-item img {
+  display: block;
+}
+
+.content.portfolio .portfolio-wrapper .portfolio-item .portfolio-hover {
+  position: absolute;
+  top: .5px;
+  left: 1.5px;
+  width: 181px;
+  height: 181px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0,0,0,0.40);
+  font-size: 60px;
+}
+
+.content.portfolio .portfolio-wrapper .portfolio-item:hover .portfolio-hover {
+  opacity: 1;
 }
 
 /* CONTACT */
