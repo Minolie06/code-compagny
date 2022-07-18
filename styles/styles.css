@@ -58,6 +58,14 @@ h2 ~ .subtitle {
   width: 1px;
 }
 
+.separator-large {
+  width: 100%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
 .wrapper-inner {
   margin: 0 auto;
   width: 100%;
@@ -247,3 +255,57 @@ nav .menu li a:hover {
   height: 799px;
   background-color: rgb(34, 49, 57);
 }
+
+.content.contact form {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.content.contact form input, .content.contact form textarea {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #e6e6e6;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0d415c;
+  /* text-align: center; */
+}
+
+.content.contact form textarea {
+  height: 140px;
+  resize: none;
+  padding: 15px;
+}
+
+.content.contact form textarea::placeholder, .content.contact form input::placeholder {
+  color: #8ea6b3;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.content.contact form textarea::placeholder {
+  transform: translateY(60px);
+}
+
+.content.contact form input[type="submit"] {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(34, 49, 57);
+  color: white;
+  font-weight: 500;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.content.contact .separator-large {
+  margin-top: 85px;
+  background-color: rgba(240,240,240,0.4);
+}
+
