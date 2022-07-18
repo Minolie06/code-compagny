@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+.content {
+  padding: 60px 0;
+}
+
 h1 {
   font-size: 60px;
   letter-spacing: -1px;
@@ -51,6 +55,57 @@ h2 ~ .subtitle {
 nav {
   height: 100px;
   background-color: #093348;
+}
+
+nav .wrapper-inner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.03137254901960784);
+  border: 1px solid #3b5968;
+  position: relative;
+}
+
+nav .logo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+nav .menu {
+  display: flex;
+}
+
+nav .menu li a {
+  margin: 0 7px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+nav .menu li a:hover {
+  background-color: rgba(31,68,88);
+  color: rgb(142,189, 214);
 }
 
 /* HOMEPAGE */
